@@ -23,6 +23,16 @@
 
 
 	</dependencies>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>qmetry-test-management-maven-plugin-mvn-repo</id>
+			<url>https://raw.github.com/qmetry/qmetry-test-management-maven-plugin/mvn-repo/</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
 		<build>
 
 		<plugins>
@@ -41,6 +51,20 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.20</version>
 				
+			</plugin>
+			<plugin>
+				<groupId>com.qmetry</groupId>
+				<artifactId>qmetry-test-management-maven-plugin</artifactId>
+				<configuration>
+					<url>https://testmanagement.qmetry.com/</url>
+					<apikey>e00dc76e912c88e052f9a812f1be4dfdcc84713eb64d420fb93614f8885d6723</apikey>
+					<filepath>target\surefire-reports\TEST-com.phoenixIts.demo.ProgramTest.xml</filepath>
+					<format>junit/xml</format>
+					<project>
+						SAM
+					</project> <!-- or <qtmProject>Demo Project</qtmProject> -->
+
+				</configuration>
 			</plugin>
 			</plugins>
 			</build>
