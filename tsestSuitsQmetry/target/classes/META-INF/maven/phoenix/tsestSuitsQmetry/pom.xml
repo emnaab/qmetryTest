@@ -57,11 +57,11 @@
 				<artifactId>qmetry-test-management-maven-plugin</artifactId>
 				<configuration>
 					<url>https://testmanagement.qmetry.com/</url>
-					<apikey>e00dc76e912c88e052f9a812f1be4dfdcc84713eb64d420fb93614f8885d6723</apikey>
+					<apikey>s88uU3TgoMQ2TCRzek2poTvnvXMv0EzTmXTc2GVX</apikey>
 					<filepath>target\surefire-reports\TEST-com.phoenixIts.demo.ProgramTest.xml</filepath>
 					<format>junit/xml</format>
 					<project>
-						SAM
+						ALO
 					</project> <!-- or <qtmProject>Demo Project</qtmProject> -->
 
 				</configuration>
